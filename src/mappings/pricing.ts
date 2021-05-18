@@ -15,11 +15,11 @@ export function getEthPriceInUSD(): BigDecimal {
   // let usdcPair = Pair.load(USDC_WETH_PAIR) // usdc is token0
   let usdtPair = Pair.load(USDT_WETH_PAIR) // usdt is token1
 
-  if (usdtPair !== null) {
+  // if (usdtPair !== null) {
     return usdtPair.token1Price
-  } else {
-    return ZERO_BD
-  }
+  // } else {
+  //   return ZERO_BD
+  // }
 }
 // export function getEthPriceInUSD(): BigDecimal {
 //   // fetch eth prices for each stablecoin
